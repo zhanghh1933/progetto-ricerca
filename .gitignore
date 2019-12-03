@@ -1,1 +1,8 @@
 /src/test_args.py
+/dataset_complete/whatsapp/
+/dataset_complete/telegram/
+/dataset_complete/original/
+/dataset_complete/messenger/
+/double_sharing/messenger/
+/double_sharing/telegram/
+/double_sharing/whatsapp/
