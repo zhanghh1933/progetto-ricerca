@@ -3,11 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import scipy.io as spy
 import sys
-import pickle
-import time
-import datetime
-import random
-import itertools
 
 from src.plot_confusion_matrix import plot_confusion_matrix, write_matrix, write_row, write_figure, write_log_table
 
@@ -389,7 +384,7 @@ if parte3:
     X = preprocessing.scale(X)
 
     complete_class_num = [1, 2, 3, 11, 12, 13, 21, 23, 31, 4]
-    complete_class_name = ['1', '2', '3', '11', '12', '13', '21', '23', '31', '4']
+    # complete_class_name = ['1', '2', '3', '11', '12', '13', '21', '23', '31', '4']
 
     complete_class_name = ['mess', 'tele', 'what',
                            'mess\_mess', 'tele\_mess', 'what\_mess',
@@ -539,7 +534,7 @@ if parte4:
     X = preprocessing.scale(X)
 
     complete_class_num = [1, 2, 3, 11, 12, 13, 23, 4]
-    complete_class_name = ['1', '2', '3', '11', '12', '13', '23', '4']
+    # complete_class_name = ['1', '2', '3', '11', '12', '13', '23', '4']
 
     complete_class_name = ['mess', 'tele', 'what',
                            'mess\_mess', 'tele\_mess', 'what\_mess',

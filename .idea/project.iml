@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/dataset_complete" />
+      <excludeFolder url="file://$MODULE_DIR$/double_sharing" />
       <excludeFolder url="file://$MODULE_DIR$/matlab/libs/jpeg-8/.deps" />
     </content>
     <orderEntry type="inheritedJdk" />

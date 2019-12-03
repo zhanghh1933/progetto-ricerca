@@ -6,13 +6,12 @@
 
 %% to be configured
 %db_path = '../../../dataset/our_own_small_set_double_sharing/release';
-db_path_m = '../dataset_complete/messenger';
-db_path_t = '../dataset_complete/telegram';
-db_path_w = '../dataset_complete/whatsapp';
-db_path_o = '../dataset_complete/original';
+db_path_m = '../../dataset_complete/messenger';
+db_path_t = '../../dataset_complete/telegram';
+db_path_w = '../../dataset_complete/whatsapp';
+db_path_o = '../../dataset_complete/original';
+
 skip1 = true;
-
-
 
 M = cell(350, 1);
 %M(:) = {'M'};
