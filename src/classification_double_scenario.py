@@ -16,6 +16,13 @@ from sklearn.metrics import confusion_matrix, precision_score, classification_re
 from sklearn.externals import joblib
 import src.settings as sett
 
+
+###########################################################################################################
+#
+#   not need anymore, do not run
+#
+############################################################################################################
+
 file_name = 'report_double.tex'
 file_add = 'addi_features_all_double.mat'
 

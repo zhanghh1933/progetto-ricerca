@@ -1,8 +1,8 @@
-%clear all
-%close all
-%clc
+clear all
+close all
+clc
 
-%addpath('../../libs/jpeg_toolbox');
+load_functions
 
 %% to be configured
 %db_path = '../../../dataset/our_own_small_set_double_sharing/release';
@@ -70,11 +70,41 @@ features_all = [Features_m_m; Features_m_t; Features_m_w;
     Features_w_m; Features_w_t; Features_w_w;
     Features_o];
 
-save('outputNew/addi_features_all_double.mat', 'target' ,'features_all');
+save('../output/addi_features_all_double.mat', 'target' ,'features_all');
 
 
 
 %% extract histogram of dequantized DCT coefficients
+Nc = 9;         % number of AC coefficients (zig zag scan)
+BT = 20;        % maximum bin value => number of bins = 2*BT+1
+channel = 1;    % luminance channel
+
+[Hist_m_m, file_path, file_name] = dct_coef_hist_recursive(db_path_m_m, channel, Nc, BT);
+[Hist_m_t, file_path, file_name] = dct_coef_hist_recursive(db_path_m_t, channel, Nc, BT);
+[Hist_m_w, file_path, file_name] = dct_coef_hist_recursive(db_path_m_w, channel, Nc, BT);
+
+[Hist_t_m, file_path, file_name] = dct_coef_hist_recursive(db_path_t_m, channel, Nc, BT);
+[Hist_t_t, file_path, file_name] = dct_coef_hist_recursive(db_path_t_t, channel, Nc, BT);
+[Hist_t_w, file_path, file_name] = dct_coef_hist_recursive(db_path_t_w, channel, Nc, BT);
+
+[Hist_w_m, file_path, file_name] = dct_coef_hist_recursive(db_path_w_m, channel, Nc, BT);
+[Hist_w_t, file_path, file_name] = dct_coef_hist_recursive(db_path_w_t, channel, Nc, BT);
+[Hist_w_w, file_path, file_name] = dct_coef_hist_recursive(db_path_w_w, channel, Nc, BT);
+
+[Hist_o, file_path, file_name] = dct_coef_hist_recursive(db_path_o, channel, Nc, BT);
+
+features_all = [
+    Hist_m_m; Hist_m_t; Hist_m_w; 
+    Hist_t_m; Hist_t_t; Hist_t_w;
+    Hist_w_m; Hist_w_t; Hist_w_w;
+    Hist_o];
+
+%cambiare il nome del file 
+save('../output/deq_dct_coef_all_double.mat', 'target' , 'features_all');
+
+
+
+%% extract histogram of dequantized DCT coefficients with new method
 Nc = 9;         % number of AC coefficients (zig zag scan)
 BT = 20;        % maximum bin value => number of bins = 2*BT+1
 channel = 1;    % luminance channel
@@ -100,9 +130,5 @@ features_all = [
     Hist_o];
 
 
-
-%cambiare il nome del file 
-save('outputNew/deq_dct_coef_all_double.mat', 'target' , 'features_all');
-
-
+save('../output/new_deq_dct_coef_all_double.mat', 'target' , 'features_all');
 

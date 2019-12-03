@@ -1,0 +1,80 @@
+\documentclass[epsfig,a4paper,11pt,titlepage,oneside,openany]{book}
+\usepackage{epsfig}
+\usepackage{plain}
+\usepackage{setspace}
+\usepackage[paperheight=29.7cm,paperwidth=21cm,outer=2cm,inner=2cm,top=2cm,bottom=2cm]{geometry} % per definizione layout
+\usepackage{titlesec} % per formato custom dei titoli dei capitoli
+\usepackage{longtable}
+
+%\usepackage[latin1]{inputenc} % per Windows;
+\usepackage[utf8x]{inputenc} % per Linux (richiede il pacchetto unicode);
+%\usepackage[applemac]{inputenc} % per Mac.
+
+\singlespacing
+\usepackage[english]{babel}
+
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage[table]{xcolor}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{booktabs}
+
+
+\begin{document}
+	
+	%\title{Research Project: Multimedia Data Security \\ Classification of sharing Applications}
+	%\author{Kristjan Gjika}
+	%\maketitle
+	
+	\pagenumbering{gobble} 
+	\input{first_page}
+	
+	\clearpage
+	
+	\pagestyle{plain}
+	
+	\mainmatter
+	
+	\tableofcontents
+	\clearpage
+	
+	
+	\begingroup
+	% nessuna interruzione di pagina tra capitoli
+	% ridefinizione dei comandi di clear page
+	\renewcommand{\cleardoublepage}{} 
+	\renewcommand{\clearpage}{} 
+	
+	\titleformat{\chapter}
+	{\normalfont\Huge\bfseries}{\thechapter}{1em}{}
+	
+	\titlespacing*{\chapter}{0pt}{0.59in}{0.02in}
+	\titlespacing*{\section}{0pt}{0.20in}{0.02in}
+	\titlespacing*{\subsection}{0pt}{0.10in}{0.02in}
+	
+%	\input{introduction}
+%	\input{analisy}
+%	\input{features}
+	\input{report_single}
+	%\input{report_double}
+	%\input{flow}
+%	\input{report_double_parte1.tex}
+%	\input{report_double_parte2.tex}
+%	\input{report_double_parte3.tex}
+%	\input{new_methods.tex}
+%	\input{conclusions.tex}
+	%\input{report_double_parte4_.tex}
+		
+	\endgroup
+	
+	\addcontentsline{toc}{chapter}{Bibliografia}
+	% stile con ordinamento alfabetico in funzione degli autori
+	\bibliographystyle{plain}
+	\bibliography{biblio}
+	%\cellcolor{blue!25}
+	
+\end{document}

@@ -1,18 +1,20 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.io as spy
-from src.plot_confusion_matrix import plot_confusion_matrix, write_matrix, write_row, write_figure, write_log_table
 
-from sklearn import datasets, linear_model, svm, preprocessing, model_selection
+from src.plot_confusion_matrix import plot_confusion_matrix, write_matrix, write_row, write_figure, write_log_table
+from settings import SETTINGS
+
+from sklearn import linear_model, svm, preprocessing, model_selection
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, precision_score
 from sklearn.externals import joblib
-import src.settings as sett
+
 
 lr = linear_model.LogisticRegression()  # linear regression
 lsvm = svm.LinearSVC()  # linear SVM
-rf = RandomForestClassifier(n_estimators=100)  # random forrest
+rf = RandomForestClassifier(n_estimators=SETTINGS['n_estimators'])  # random forrest
 
 parte1 = True
 parte2 = True
@@ -27,6 +29,7 @@ a_add = spy.loadmat(folderData + 'addi_features_all.mat')
 a_dct = spy.loadmat(folderData + 'deq_dct_coef_all.mat')
 a_add_x = a_add['features_all']
 a_dct_x = a_dct['features_all']
+
 a = np.column_stack((a_add_x, a_dct_x))
 a = preprocessing.scale(a)
 target = a_add['target']

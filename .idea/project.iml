@@ -7,6 +7,9 @@
       <excludeFolder url="file://$MODULE_DIR$/dataset_complete" />
       <excludeFolder url="file://$MODULE_DIR$/double_sharing" />
       <excludeFolder url="file://$MODULE_DIR$/matlab/libs/jpeg-8/.deps" />
+      <excludeFolder url="file://$MODULE_DIR$/output" />
+      <excludeFolder url="file://$MODULE_DIR$/output_class" />
+      <excludeFolder url="file://$MODULE_DIR$/report" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
