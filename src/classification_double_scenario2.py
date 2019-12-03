@@ -1,6 +1,8 @@
+import getopt
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.io as spy
+import sys
 import pickle
 import time
 import datetime
@@ -15,6 +17,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, precision_score, classification_report
 from sklearn.externals import joblib
 import src.settings as sett
+
+# getopt.getopt()
 
 file_add = 'addi_features_all_double.mat'
 file_dct_Y = 'deq_dct_coef_all_double.mat'
