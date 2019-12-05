@@ -1,3 +1,7 @@
+###############################################################
+# do not use this file is obsolete and useless now            #
+###############################################################
+
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.io as spy

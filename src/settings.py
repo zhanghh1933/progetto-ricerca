@@ -19,4 +19,5 @@ SETTINGS = {
     'double_dct_new': '..\\output\\new_deq_dct_coef_all_double.mat',
 
     'n_estimators': 100,
+    'max_iter': 1000,
 }

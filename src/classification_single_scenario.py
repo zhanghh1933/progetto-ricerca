@@ -15,9 +15,10 @@ import joblib
 
 
 def single_scenario_computation(argv, new_method=False):
-    lr = linear_model.LogisticRegression(solver='liblinear', multi_class='ovr')
-    lsvm = svm.LinearSVC(max_iter=3000)
+    lr = linear_model.LogisticRegression() # solver='liblinear', multi_class='ovr')
+    lsvm = svm.LinearSVC(max_iter=SETTINGS['max_iter'])
     rf = RandomForestClassifier(n_estimators=SETTINGS['n_estimators'])
+
     if new_method:
         f = open(SETTINGS['report_single_new_method'], 'w')
     else:
@@ -351,4 +352,5 @@ if __name__ == "__main__":
             method = True
             print(opt, ' : ', arg)
 
+    # passo tutti i argv anche se vuoti per magari un futuro utilizzo
     single_scenario_computation(sys.argv[1:], method)
