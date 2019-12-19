@@ -1,6 +1,24 @@
-# Progetto di ricerca su Sharing di immaggini
+# Reserch Project on image forensics
 
-One Paragraph of project description goes here
+A resech project done in "Università degli Studi di Trento" on detecting the source of a shared image via 
+Whatsapp, Telegram and Message using their web version.
+
+The project is divided in a first part of creating the dataset. Taking a base of 350 image of 
+varius dimension and characteristic we shared them via the three messaging app one time, then 
+taking the shared image we shared another time. In last we have:
+
+* 350 original image
+* 1050 image shared 1 time
+* 3150 image shared 2 time
+
+The whole dataset is avaiable via a link on google drive.
+
+Then the second part is to extract the feature of the images. We use two method, in one we use 
+the standard JPEG library for extracting quantization table and other pixel base infomation.
+Then the second method we rewrite the extraction of the quantization bean taking into account the fractional part
+of the DCT's component, that are truncated in the normal procudure of JPEG.
+
+Then the last part is to learn the selected classifiers and draw conclusions.
 
 ## Getting Started
 
@@ -28,8 +46,8 @@ pip install -r requirements.txt
 
 This will install all the package needed.
 
-Now from ........ download the dataset and copy into the project folder in the way that the structure
-of the folder will be exactly this:
+Now from https://drive.google.com/open?id=1fwRt_wLnFs1CKxquDCVW6xvk1uKAfZyE download the dataset and 
+copy into the project folder in the way that the structure of the folder will be exactly this:
 
 ```
 project
