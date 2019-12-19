@@ -89,17 +89,38 @@ single_scenario_extract_features.m
 double_scenario_extract_features.m
 ```
 
-e qui andra altro
+Onece you have the `.mat` file then you can run the python scipt for train the classifiers.
 
 Now you are ready to start ^^
 
 ## How to work
 
-Work inside of src folder
+For the script to work correctly you must launch them from the `/src/` folder and activate the
+virtual environment if you are using one. The script `activate.bat` work on windows and on a 
+preinstalled venv named `prog-ricerca`.
 
-Put the new code that is for the competition into 'code' and in libs are some usefull libs.
-Instead into source put all the json files that you need, do not commit those file because 
-they are really big :)
+The command that you can launch are:
+
+```
+python classification_single_scenario.py 
+python classification_single_scenario.py --new
+
+python classification_double_scenario.py
+python classification_double_scenario.py --new
+```
+
+The name of the script is self explaning, the argument `--new` is for use the features extracted
+with the method done by us.
+
+One you run the scripts, they write automatic a report in LaTex that can be found in the folder 
+`report`. The report is divided into files and need a main file that include all the created files.
+
+In this report you can find all the confusion matrix and cross validation done during the 
+script. Also in `report/images/` you will find the confusion matrix in the form of image ready to use
+in other place.
+
+In the last the file `report_gjika.pdf` in the main folder is the result of this resech project
+complete of explanation for the result that we obtained.
 
 ## License
 
@@ -107,6 +128,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+This project was made under the supervision of Giulia Boato, professor at UniTn, 
+and Quoc Tin Phan Phd at UniTn.
