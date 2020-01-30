@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.10)  5 DEC 2019 17:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.10)  28 JAN 2020 17:01
 entering extended mode
 **./report.tex
 (report.tex
@@ -497,60 +497,125 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ]
-(new_met_report_double_parte1_.tex
+(report_single_new.tex
 Chapter 1.
 
+Underfull \hbox (badness 10000) in paragraph at lines 3--15
+
+ []
+
+<images/lr_initial.png, id=17, 462.528pt x 346.896pt>
+File: images/lr_initial.png Graphic file (type png)
+<use images/lr_initial.png>
+Package pdftex.def Info: images/lr_initial.png  used on input line 33.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+[2
+
+ <./images/lr_initial.png>]
+<images/lsvm_initial.png, id=23, 462.528pt x 346.896pt>
+File: images/lsvm_initial.png Graphic file (type png)
+<use images/lsvm_initial.png>
+Package pdftex.def Info: images/lsvm_initial.png  used on input line 74.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+<images/rf_initial.png, id=24, 462.528pt x 346.896pt>
+File: images/rf_initial.png Graphic file (type png)
+<use images/rf_initial.png>
+Package pdftex.def Info: images/rf_initial.png  used on input line 115.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+ [3 <./images/lsvm_initial.png>]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 167
+ []
+
+[4 <./images/rf_initial.png>] [5]
+<images/logistic_total.png, id=36, 462.528pt x 346.896pt>
+File: images/logistic_total.png Graphic file (type png)
+<use images/logistic_total.png>
+Package pdftex.def Info: images/logistic_total.png  used on input line 235.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+<images/lsvm_total.png, id=37, 462.528pt x 346.896pt>
+File: images/lsvm_total.png Graphic file (type png)
+<use images/lsvm_total.png>
+Package pdftex.def Info: images/lsvm_total.png  used on input line 241.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+<images/random_total.png, id=38, 462.528pt x 346.896pt>
+File: images/random_total.png Graphic file (type png)
+<use images/random_total.png>
+Package pdftex.def Info: images/random_total.png  used on input line 247.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+) (new_met_report_double_parte1_.tex
+Chapter 3.
+[6 <./images/logistic_total.png> <./images/lsvm_total.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1--13
 
  []
 
-<images/new_met_lr_initial_double_simple.png, id=17, 462.528pt x 346.896pt>
+<images/new_met_lr_initial_double_simple.png, id=45, 462.528pt x 346.896pt>
 File: images/new_met_lr_initial_double_simple.png Graphic file (type png)
 <use images/new_met_lr_initial_double_simple.png>
 Package pdftex.def Info: images/new_met_lr_initial_double_simple.png  used on i
 nput line 31.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
-) (new_met_report_double_parte2_.tex
-Chapter 2.
+[7 <./images/random_total.png>]
+<images/new_met_lsvm_initial_double_simple.png, id=50, 462.528pt x 346.896pt>
+File: images/new_met_lsvm_initial_double_simple.png Graphic file (type png)
+<use images/new_met_lsvm_initial_double_simple.png>
+Package pdftex.def Info: images/new_met_lsvm_initial_double_simple.png  used on
+ input line 73.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+ [8 <./images/new_met_lr_initial_double_simple.png> <./images/new_met_lsvm_init
+ial_double_simple.png>]
+<images/new_met_rf_initial_double_simple.png, id=56, 462.528pt x 346.896pt>
+File: images/new_met_rf_initial_double_simple.png Graphic file (type png)
+<use images/new_met_rf_initial_double_simple.png>
+Package pdftex.def Info: images/new_met_rf_initial_double_simple.png  used on i
+nput line 115.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+)
+(new_met_report_double_parte2_.tex
+Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--23
 
  []
 
-[2
-
- <./images/new_met_lr_initial_double_simple.png>]
-<images/new_met_lr_initial_double_complete.png, id=23, 462.528pt x 346.896pt>
+[9 <./images/new_met_rf_initial_double_simple.png>]
+<images/new_met_lr_initial_double_complete.png, id=61, 462.528pt x 346.896pt>
 File: images/new_met_lr_initial_double_complete.png Graphic file (type png)
 <use images/new_met_lr_initial_double_complete.png>
 Package pdftex.def Info: images/new_met_lr_initial_double_complete.png  used on
  input line 47.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- [3]
-<images/new_met_lsvm_initial_double_complete.png, id=27, 462.528pt x 346.896pt>
+ [10 <./images/new_met_lr_initial_double_complete.png>]
+<images/new_met_lsvm_initial_double_complete.png, id=66, 462.528pt x 346.896pt>
 
 File: images/new_met_lsvm_initial_double_complete.png Graphic file (type png)
 <use images/new_met_lsvm_initial_double_complete.png>
 Package pdftex.def Info: images/new_met_lsvm_initial_double_complete.png  used 
 on input line 95.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- [4 <./images/new_met_lr_initial_double_complete.png>]
-<images/new_met_rf_initial_double_complete.png, id=32, 462.528pt x 346.896pt>
+ [11 <./images/new_met_lsvm_initial_double_complete.png>]
+<images/new_met_rf_initial_double_complete.png, id=71, 462.528pt x 346.896pt>
 File: images/new_met_rf_initial_double_complete.png Graphic file (type png)
 <use images/new_met_rf_initial_double_complete.png>
 Package pdftex.def Info: images/new_met_rf_initial_double_complete.png  used on
  input line 143.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- [5 <./images/new_met_lsvm_initial_double_complete.png>]) (new_met_report_doubl
-e_parte3_.tex
-Chapter 3.
+) (new_met_report_double_parte3_.tex
+Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--23
 
  []
 
-[6 <./images/new_met_rf_initial_double_complete.png>]
-<images/new_met_lr_initial_single_double_complete.png, id=42, 462.528pt x 346.8
+[12 <./images/new_met_rf_initial_double_complete.png>]
+<images/new_met_lr_initial_single_double_complete.png, id=77, 462.528pt x 346.8
 96pt>
 File: images/new_met_lr_initial_single_double_complete.png Graphic file (type p
 ng)
@@ -558,8 +623,8 @@ ng)
 Package pdftex.def Info: images/new_met_lr_initial_single_double_complete.png  
 used on input line 47.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- [7 <./images/new_met_lr_initial_single_double_complete.png>]
-<images/new_met_lsvm_initial_single_double_complete.png, id=47, 462.528pt x 346
+ [13 <./images/new_met_lr_initial_single_double_complete.png>]
+<images/new_met_lsvm_initial_single_double_complete.png, id=82, 462.528pt x 346
 .896pt>
 File: images/new_met_lsvm_initial_single_double_complete.png Graphic file (type
  png)
@@ -567,8 +632,8 @@ File: images/new_met_lsvm_initial_single_double_complete.png Graphic file (type
 Package pdftex.def Info: images/new_met_lsvm_initial_single_double_complete.png
   used on input line 95.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- [8 <./images/new_met_lsvm_initial_single_double_complete.png>]
-<images/new_met_rf_initial_single_double_complete.png, id=52, 462.528pt x 346.8
+ [14 <./images/new_met_lsvm_initial_single_double_complete.png>]
+<images/new_met_rf_initial_single_double_complete.png, id=87, 462.528pt x 346.8
 96pt>
 File: images/new_met_rf_initial_single_double_complete.png Graphic file (type p
 ng)
@@ -576,21 +641,21 @@ ng)
 Package pdftex.def Info: images/new_met_rf_initial_single_double_complete.png  
 used on input line 143.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
-) (report.bbl [9 <./images/new_met_rf_initial_single_double_complete.png>]
+) (report.bbl [15 <./images/new_met_rf_initial_single_double_complete.png>]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [10
+) [16
 
 ] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 5360 strings out of 492970
- 84250 string characters out of 3126593
- 187843 words of memory out of 3000000
- 9096 multiletter control sequences out of 15000+200000
+ 5404 strings out of 492970
+ 85577 string characters out of 3126593
+ 194912 words of memory out of 3000000
+ 9129 multiletter control sequences out of 15000+200000
  9414 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,39p,308b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,39p,308b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/greed/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmbx10.pfb><C:/Users/greed/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/greed/AppData/Local/Program
@@ -599,9 +664,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/greed/AppData
 reed/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ><C:/Users/greed/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmr17.pfb>
-Output written on report.pdf (11 pages, 539545 bytes).
+Output written on report.pdf (17 pages, 789045 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

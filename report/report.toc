@@ -1,12 +1,19 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Double Scenario Classification of the last shared app, KFold Validation}{2}
+\contentsline {chapter}{\numberline {1}Single Scenario Classification, KFold Validation}{2}
 \contentsline {section}{\numberline {1.1}Logistic regression results:}{2}
-\contentsline {chapter}{\numberline {2}Double Scenario Classification of the first and last shared app, KFold Validation}{3}
-\contentsline {section}{\numberline {2.1}Logistic regression results:}{3}
-\contentsline {section}{\numberline {2.2}Linear Support Vector Machine results:}{4}
-\contentsline {section}{\numberline {2.3}Random forest results:}{5}
-\contentsline {chapter}{\numberline {3}Single and double scenario, KFold Validation}{6}
-\contentsline {section}{\numberline {3.1}Logistic regression results:}{6}
-\contentsline {section}{\numberline {3.2}Linear Support Vector Machine results:}{7}
-\contentsline {section}{\numberline {3.3}Random forest results:}{8}
-\contentsline {chapter}{Bibliografia}{9}
+\contentsline {section}{\numberline {1.2}Linear Support Vector Machine results:}{3}
+\contentsline {section}{\numberline {1.3}Random forest results:}{3}
+\contentsline {chapter}{\numberline {2}Single Scenario Classification, Circularly Validation}{4}
+\contentsline {chapter}{\numberline {3}Double Scenario Classification of the last shared app, KFold Validation}{7}
+\contentsline {section}{\numberline {3.1}Logistic regression results:}{7}
+\contentsline {section}{\numberline {3.2}Linear Support Vector Machine results:}{8}
+\contentsline {section}{\numberline {3.3}Random forest results:}{9}
+\contentsline {chapter}{\numberline {4}Double Scenario Classification of the first and last shared app, KFold Validation}{9}
+\contentsline {section}{\numberline {4.1}Logistic regression results:}{10}
+\contentsline {section}{\numberline {4.2}Linear Support Vector Machine results:}{11}
+\contentsline {section}{\numberline {4.3}Random forest results:}{11}
+\contentsline {chapter}{\numberline {5}Single and double scenario, KFold Validation}{12}
+\contentsline {section}{\numberline {5.1}Logistic regression results:}{13}
+\contentsline {section}{\numberline {5.2}Linear Support Vector Machine results:}{14}
+\contentsline {section}{\numberline {5.3}Random forest results:}{14}
+\contentsline {chapter}{Bibliografia}{15}
