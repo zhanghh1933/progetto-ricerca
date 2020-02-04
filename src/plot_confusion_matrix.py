@@ -37,8 +37,8 @@ def plot_confusion_matrix(cm, classes,
                  color="white" if cm[i, j] > thresh else "black")
 
     plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    # plt.ylabel('True label')
+    # plt.xlabel('Predicted label')
 
 def write_matrix(f, matrix):
     f.write('\n {\\def\\arraystretch{1.3} \n \\begin{table}[H] \n')

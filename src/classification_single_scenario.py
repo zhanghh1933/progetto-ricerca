@@ -25,8 +25,9 @@ def single_scenario_computation(argv, new_method=False):
         f = open(SETTINGS['report_single'], 'w')
     report_folder = SETTINGS['report_folder']
     report_image_folder = SETTINGS['report_image_folder']
+    prefix_images = ''
     if new_method:
-        report_image_folder += 'new_met_'
+        prefix_images += 'new_met_'
 
     output_class_folder = SETTINGS['output_class_folder']
 
@@ -99,14 +100,14 @@ def single_scenario_computation(argv, new_method=False):
 
     plt.figure()
     plot_confusion_matrix(confusion_lr, classes, title='Logistic regression confusion matrix', normalize=True)
-    plt.savefig(report_image_folder + 'lr_initial.png')
+    plt.savefig(report_image_folder + prefix_images + 'lr_initial.png')
     plt.close()
 
     confusion_lr = np.column_stack((np.array(classes), confusion_lr))
     confusion_lr = np.append(classes_up, confusion_lr, axis=0)
     write_matrix(f, confusion_lr)
 
-    write_figure(f, 'lr_initial.png', caption='logistic regression')
+    write_figure(f, prefix_images + 'lr_initial.png', caption='logistic regression')
     f.write('\n\nResult of the KFold validation with 10 bins:')
     result_lr = model_selection.cross_val_score(lr, X_train, y_train, cv=kfold, scoring=scoring)
     write_row(f, result_lr.transpose())
@@ -122,14 +123,14 @@ def single_scenario_computation(argv, new_method=False):
 
     plt.figure()
     plot_confusion_matrix(confusion_lsvm, classes, title='Linear suppurt vector machine confusion matrix', normalize=True)
-    plt.savefig(report_image_folder + 'lsvm_initial.png')
+    plt.savefig(report_image_folder + prefix_images + 'lsvm_initial.png')
     plt.close()
 
     confusion_lsvm = np.column_stack((np.array(classes), confusion_lsvm))
     confusion_lsvm = np.append(classes_up, confusion_lsvm, axis=0)
     write_matrix(f, confusion_lsvm)
 
-    write_figure(f, 'lsvm_initial.png', caption='linear SVM')
+    write_figure(f, prefix_images + 'lsvm_initial.png', caption='linear SVM')
 
     result_lsvm = model_selection.cross_val_score(lsvm, X_train, y_train, cv=kfold, scoring=scoring)
 
@@ -148,14 +149,14 @@ def single_scenario_computation(argv, new_method=False):
 
     plt.figure()
     plot_confusion_matrix(confusion_rf, classes, title='Random forest confusion matrix', normalize=True)
-    plt.savefig(report_image_folder + 'rf_initial.png')
+    plt.savefig(report_image_folder + prefix_images + 'rf_initial.png')
     plt.close()
 
     confusion_rf = np.column_stack((np.array(classes), confusion_rf))
     confusion_rf = np.append(classes_up, confusion_rf, axis=0)
     write_matrix(f, confusion_rf)
 
-    write_figure(f, 'rf_initial.png', caption='random forest')
+    write_figure(f, prefix_images + 'rf_initial.png', caption='random forest')
 
     result_rf = model_selection.cross_val_score(rf, X_train, y_train, cv=kfold, scoring=scoring)
 
@@ -309,23 +310,23 @@ def single_scenario_computation(argv, new_method=False):
     plot_confusion_matrix(total_cf_lr, ['messenger', 'telegram', 'whatsapp', 'original'],
                           title='logistic regression confusion matrix', normalize=True)
 
-    plt.savefig(report_image_folder + 'logistic_total.png')
+    plt.savefig(report_image_folder + prefix_images + 'logistic_total.png')
     plt.close()
-    write_figure(f, 'logistic_total.png', caption='logistic regression')
+    write_figure(f, prefix_images + 'logistic_total.png', caption='logistic regression')
 
     plt.figure()
     plot_confusion_matrix(total_cf_lsvm, ['messenger', 'telegram', 'whatsapp', 'original'],
                           title='linear suppurt vector machine confusion matrix', normalize=True)
-    plt.savefig(report_image_folder + 'lsvm_total.png')
+    plt.savefig(report_image_folder + prefix_images + 'lsvm_total.png')
     plt.close()
-    write_figure(f, 'lsvm_total.png', caption='linear SVM')
+    write_figure(f, prefix_images + 'lsvm_total.png', caption='linear SVM')
 
     plt.figure()
     plot_confusion_matrix(total_cf_rf, ['messenger', 'telegram', 'whatsapp', 'original'],
                           title='random forest confusion matrix', normalize=True)
-    plt.savefig(report_image_folder + 'random_total.png')
+    plt.savefig(report_image_folder + prefix_images + 'random_total.png')
     plt.close()
-    write_figure(f, 'random_total.png', caption='random forest')
+    write_figure(f, prefix_images + 'random_total.png', caption='random forest')
 
     f.close()
 
